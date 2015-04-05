@@ -3,16 +3,19 @@
 
 using namespace std;
 
-string userin(string &);
+void userin(string &);
 void print(const string);
 
-string userin(string &s)
+void userin(string &s)
 {
-	getline(s);
+	getline(cin,s);
+	return;
 }
 
 void print(const string s)
 {
+	cout << "Your message is as follows:" << endl;
+	cout << s << endl;
 }
 
 int main()
