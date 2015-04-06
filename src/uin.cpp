@@ -20,7 +20,7 @@ vector <string>parsed (const string s)
 {
 	vector <string>v;
 	string parsing = s;
-	string par = "";
+	string par = " ";
 
 	int j = 0;
 	int k = 0;
@@ -28,24 +28,31 @@ vector <string>parsed (const string s)
 	{
 		if(parsing.at(i) == ' ')
 		{
+
+			/*
 			j = 0;
 			v.push_back(par);
-			v.at(k).append(parsing.at(i));
+			v.at(k) = parsing.at(i);
 			k++;
+			*/
 			continue;
 		}
 		else if(parsing.at(i) != ' ')
 		{
 			if(j == 0)
 			{
+				/*
 				v.push_back(par);
-				v.at(k).append(parsing.at(i));
+				v.at(k) = parsing.at(i);
 				j++;
+				*/
 			}
 			else
 			{
+				/*
 				v.at(k).append(parsing.at(i));
 				j++;
+				*/
 			}
 		}
 	}
