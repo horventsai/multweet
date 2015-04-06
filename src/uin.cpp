@@ -11,7 +11,10 @@ void print(const string);
 
 void userin(string &s)
 {
+	cout << "Enter your message (hit enter to confirm): ";
 	getline(cin,s);
+
+	cout << endl;
 
 	return;
 }
@@ -106,7 +109,7 @@ int main()
 	string uin;
 
 	userin(uin);
-	parsed(uin);
+	//parsed(uin);
 	print(uin);
 
 	return 0;
